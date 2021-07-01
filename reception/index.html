@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بخش پذیرش</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/starter.css" />
+    <script src="js/validation.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div id="starter">
+      <div id="doctor-right" class="inline">
+        <img id="doctor" src="images/Doctor.svg" alt="" srcset="" />
+      </div>
+      <div id="show-text" class="inline">
+        <div id="inner-text">
+          <p>
+            سلام دوست عزیز دکتر این بیمارستان من هستم و تا اخر درمانتون همراهتون
+            هستم و اصلا نیازی به نگرانی نیست فقط قبلش برای اینکه با شما بیشتر
+            اشنا بشم فرم داخل صفحه رو پرکنید . منتظرتون هستم :)
+          </p>
+        </div>
+        <img id="note-pad" src="images/note-pad.png" alt="" srcset="" />
+      </div>
+      <div class="clearFix"></div>
+      <img id="stethoscope" src="images/stethoscope.png" alt="" srcset="" />
+    </div>
+
+    <div id="connect">
+      <div id="right-connector">
+        <p>بعد از پرکردن فرم منتظر پیام پشتیبان باشید</p>
+      </div>
+      <!-- <div id="left-connector">
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+      </div> -->
+      <img src="images/Group 1.svg" alt="" srcset="" />
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("select").change(function () {
+          if ($(this).val() == "") $(this).css({ color: "red" });
+          else $(this).css({ color: "green", border: "green 1px solid" });
+        });
+      });
+    </script>
+
+    <div id="content">
+      <hr class="right-center" />
+      <hr class="left-center" />
+      <div class="header center">
+        <h2>اطلاعات بیمار</h2>
+      </div>
+      <div class="header side right-side">
+        <h2>پذیرش</h2>
+      </div>
+      <div class="header side left-side">
+        <h2>بیمارستان شهید بهشتی</h2>
+      </div>
+      <div id="form">
+        <form action="#" autocomplete="off">
+          <label for="name">نام : </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="نام بیمار را وارد کنید"
+            onchange="validate_name('name')"
+          />
+          <br />
+          <label for="family">نام خوانوادگی : </label>
+          <input
+            type="text"
+            name="family"
+            id="family"
+            placeholder="نام خوانوادگی بیمار را وارد کنید"
+            onchange="validate_name('family')"
+          />
+          <br />
+          <label for="phone">شماره تلفن : </label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="شماره تلفن بیمار را وارد کنید"
+            onchange="validate_phone_number('phone')"
+          />
+          <br />
+          <label for="code-bime">شماره بیمه : </label>
+          <input
+            type="text"
+            name="code-bime"
+            id="code-bime"
+            placeholder="شماره بیمه بیمار را وارد کنید"
+          />
+          <br />
+          <label for="code-meli">کدملی : </label>
+          <input
+            type="text"
+            name="code-meli"
+            id="code-meli"
+            placeholder="کدملی بیمار را وارد کنید"
+            onchange="validate_code_meli('code-meli')"
+          />
+          <br />
+          <label for="gender">جنسیت : </label>
+          <select name="gender" id="gender">
+            <option style="color: red" value="male">مرد</option>
+            <option value="female">زن</option>
+          </select>
+
+          <div id="button">
+            <button id="button" type="button" onclick="validate_form()">
+              ثبت اطلاعات
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      $('input').keypress(function(e){
+        key = e.which;
+        if(key == 13){
+          validate_form()
+        }
+      })
+    </script>
+
+    <script src="js/circle.js"></script>
+  </body>
+</html>

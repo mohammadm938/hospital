@@ -1,0 +1,179 @@
+/* @import "../../css/reset.css"; */
+@import "font.css";
+
+* {
+  direction: rtl;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "vazirNormal";
+  background-color: rgba(41, 182, 246, 1);
+}
+select {
+  font-family: "vazirNormal";
+}
+
+#content {
+  position: relative;
+  background-color: #ffffff;
+  border: #f1f1f1 solid 2px;
+  border-radius: 30px;
+  -webkit-box-shadow:0px 0px 18px 2px #d2d4d6ad;
+  box-shadow: 0px 0px 18px 2px #d2d4d6ad;
+  margin: -10px auto;
+  width: 950px;
+  height: auto;
+}
+
+/* form */
+
+#form {
+  width: 28%;
+  margin: 20px auto;
+}
+/* Style the form - display items horizontally */
+#form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+/* Add some margins for each label */
+#form label {
+  margin: 5px 10px 5px 0;
+  font-size: 20px;
+}
+
+/* Style the input fields */
+#form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: "vazirNormal";
+  font-size: 20px;
+  transition: 0.5s;
+}
+#form input:hover {
+  -webkit-box-shadow: 0px 0px 18px 2px #d2d4d6ad;
+  box-shadow: 0px 0px 18px 2px #d2d4d6ad;
+  transition: 0.5s;
+}
+#form input:focus {
+  transition: 0s;
+  outline: none;
+  outline: black 2px solid;
+}
+#form select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: "vazirNormal";
+  font-size: 20px;
+  transition: 0.5s;
+}
+#form select:hover {
+  -webkit-box-shadow: 0px 0px 18px 2px #d2d4d6ad;
+  box-shadow: 0px 0px 18px 2px #d2d4d6ad;
+  transition: 0.5s;
+}
+#form button {
+  margin-top: 10px;
+  background-color: #0be881;
+  border: #05c46b solid 2px;
+  font-family: "vazirNormal";
+  padding: 12px 26px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+#form button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 18px 2px #1fbb27ad;
+  box-shadow: 0px 0px 18px 2px #1fbb27ad;
+  transition: 0.5s;
+}
+#button {
+  text-align: center;
+}
+
+
+/* header */
+
+hr {
+  width: 4px;
+  height: 60px;
+  background-color: rgba(27, 161, 223, 0.733);
+  border: rgba(27, 161, 223, 0.733) 4px dashed;
+  position: absolute;
+  top: -10px;
+  display: inline-block;
+}
+.right-center {
+  right: 377px;
+}
+.left-center {
+  left: 377px;
+}
+.header {
+  width: 20%;
+  /* height: 76px; */
+  padding: 20px;
+  text-align: center;
+  border: dashed 2px #ccc;
+  /* background-color: #e8e9ebc5; */
+  -webkit-box-shadow: 0px 0px 18px 2px #d2d4d6ad;
+  box-shadow: 0px 0px 18px 2px #d2d4d6ad;
+}
+.header h2{
+  /* padding: 15px; */
+}
+.center {
+  margin: 30px auto;
+}
+.side {
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+}
+.right-side {
+  border-top-right-radius: 30px;
+  right: 0;
+}
+.left-side {
+  border-top-left-radius: 30px;
+  left: 0;
+}
+
+/* connect img */
+#connect {
+  position: relative;
+  text-align: center;
+}
+#connect img{
+  width: 160px;
+}
+#connect div{
+  /* display: inline-block; */
+}
+#connect #right-connector{
+  font-size: 20px;
+  background-color: hsla(207,100%,82.9%,1); background-image:radial-gradient(at 80% 50%, hsla(197,100%,88%,1) 0, transparent 50%);
+  border-radius: 10px;
+  /* border: 4px solid #751079; */
+  padding: 7px 15px;
+  height: 100px;
+  position: absolute;
+  top: 80px;
+  right: 312px;
+  text-align: center;
+  border: 5px solid #4f94ee;
+  border-left: none;
+}
+#connect #right-connector p{
+  position: relative;
+  top: 30%;
+}

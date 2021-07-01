@@ -1,0 +1,63 @@
+* {
+  direction: rtl;
+  /* box-sizing: border-box; */
+  padding: 0;
+  margin: 0;
+}
+
+
+.clearFix {
+  clear: both;
+}
+#starter {
+  /* background-color: rgba(223, 225, 226, 0.5); */
+  background-color: hsla(207,100%,82.9%,1); background-image: radial-gradient(at 48% 78%, hsla(189,64.1%,63.9%,1) 0, transparent 50%),radial-gradient(at 80% 50%, hsla(197,100%,88%,1) 0, transparent 50%),radial-gradient(at 34% 37%, hsla(199,100%,50%,1) 0, transparent 50%);
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  /* border: 1px solid rgba(223, 225, 226, 1); */
+  border-radius: 30px;
+}
+#starter #doctor-right {
+  float: right;
+  margin-top: 40px;
+  z-index: 99;
+}
+#starter #doctor {
+  width: 570px;
+}
+#starter #inner-text {
+  z-index: 3;
+  width: 336px;
+  position: absolute;
+  top: 92px;
+  left: 153px;
+}
+#starter #inner-text p {
+  line-height: 32px;
+}
+#starter #note-pad {
+  width: 800px;
+  position: absolute;
+  left: -66px;
+  /* top: -110px; */
+  /* left: 0px; */
+  z-index: 2;
+}
+#starter #show-text {
+  float: left;
+  margin-top: -102px;
+  margin-left: -30px;
+}
+#starter #stethoscope {
+  z-index: 3;
+  width: 380px;
+  position: absolute;
+  top: 235px;
+  left: 138px;
+}
+
+.circle{
+    z-index: 1;
+}
